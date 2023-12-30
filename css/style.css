@@ -1,0 +1,243 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:ital,wght@0,300;1,400&family=Roboto:wght@500&family=Ubuntu:wght@400;500&display=swap');
+
+/* css Reset */
+
+*{
+margin: 0px;
+padding: 0px;
+/* box-sizing: border-box; */
+}
+/* css variables */
+/* :root{
+    --navbar-height:59px;
+} */
+
+/* Navigation Bar */
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+  
+}
+/*  Navigation Bar: logo and image */
+#logo{
+    margin: 10px 5px;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 3px 9px;
+
+}
+/* Navigation Bar: List styling */
+ #navbar ul{
+    display: flex;
+  
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../img/bg1\ \(1\).jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+   
+}
+#home h1{
+    color:black;
+    text-align: center;
+}
+#home p{
+    /* margin: 5px 5px; */
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* utility clasvscode-file:
+/* services center */
+#services{
+
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    width: 550px;
+    height: 290px;
+    /* border: 2px solid rgb(233, 8, 8); */
+    
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-color: rgb(227, 182, 195);
+}
+#services .box img{
+    border-radius: 50%;
+    display: block;
+    /* border: 3px solid rgb(153, 65, 65); */
+    background:linear-gradient(yellow ,rgb(255, 145, 0) ,rgb(216, 43, 72), purple, blue);
+    padding: 4px;
+    margin: auto;
+    width: 120px;
+  height: 120px;
+}
+#services .box p{
+    font-family: 'Lato', sans-serif;
+  
+}
+
+/* clients-section */
+#client-section{
+height: 250px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg-2.jpg) no-repeat center center/cover;
+    width: 100%;
+    /* height: 575px; */
+    z-index: -1;
+    opacity: 0.4;
+    height: 250px;
+    }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+/* height: 300px; */
+width: 150px;
+}
+.client-item{
+padding: 20px;
+}
+/* contact section */
+#contact{
+position: relative;
+/* padding: 10px 20px; */
+/* margin: 5px; */
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* margin-bottom: 5px; */
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+.h-primary{
+    font-family: 'Lato', sans-serif;
+    font-size: 3.2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(244, 165, 183);
+    border-radius: 12px;
+    color: black;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    color: white;
+    background-color: black; 
+}
+.center{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+font-size: 30px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding:  10px 20px;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+text-align: center;
+    /* font-size: 12px; */
+}
